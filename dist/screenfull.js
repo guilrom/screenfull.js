@@ -141,6 +141,7 @@
 
 	Object.defineProperties(screenfull, {
 		isFullscreen: {
+			enumerable: true,
 			get: function () {
 				return Boolean(document[fn.fullscreenElement]);
 			}
